@@ -18,9 +18,4 @@ public interface Callback {
      * @param error error
      */
     void onError(String error);
-
-    /**
-     * there is no file under path
-     */
-    void onEmpty();
 }

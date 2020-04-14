@@ -55,16 +55,25 @@ public class Common {
     }
 
     /**
+     * create and return the zip base dir
+     *
+     * @return path
+     */
+    public static String getZipBaseDir() {
+        File file = new File(Environment.getExternalStorageDirectory(), ZIP_BASE_DIR);
+        if (!file.exists()) {
+            boolean ignore = file.mkdirs();
+        }
+        return file.getAbsolutePath();
+    }
+
+    /**
      * create and return a zip file path
      *
      * @return path
      */
     public static String getZipFile() {
-        File file = new File(Environment.getExternalStorageDirectory(), ZIP_BASE_DIR);
-        if (!file.exists()) {
-            boolean ignore = file.mkdirs();
-        }
-        file = new File(file, System.currentTimeMillis() + ".zip");
+        File file = new File(getZipBaseDir(), System.currentTimeMillis() + ".zip");
         try {
             boolean ignore = file.createNewFile();
         } catch (IOException ignore) {

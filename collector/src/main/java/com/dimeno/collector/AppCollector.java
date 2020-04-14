@@ -4,7 +4,9 @@ import androidx.annotation.Nullable;
 
 import com.dimeno.collector.callback.Callback;
 import com.dimeno.collector.callback.Collector;
-import com.dimeno.collector.core.DataPacker;
+import com.dimeno.collector.callback.Request;
+import com.dimeno.collector.manager.TaskManager;
+import com.dimeno.collector.task.TaskParams;
 
 /**
  * AppCollector
@@ -12,23 +14,25 @@ import com.dimeno.collector.core.DataPacker;
  */
 public final class AppCollector implements Collector {
 
-    private static Collector sInstance;
+    private static Collector sInstance = new AppCollector();
+    private Request mRequest;
+
+    private AppCollector() {
+        mRequest = TaskManager.get();
+    }
 
     public static Collector get() {
-        if (sInstance == null) {
-            sInstance = new AppCollector();
-        }
         return sInstance;
     }
 
     @Nullable
     @Override
     public String collect(String path) {
-        return DataPacker.get().pack(path);
+        return mRequest.execute(path);
     }
 
     @Override
     public void collect(String path, Callback callback) {
-        
+        mRequest.enqueue(new TaskParams.Builder().path(path).callback(callback).build());
     }
 }

@@ -11,9 +11,4 @@ public abstract class AbsCallback implements Callback {
     public void onError(String error) {
 
     }
-
-    @Override
-    public void onEmpty() {
-
-    }
 }
