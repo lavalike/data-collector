@@ -1,0 +1,3 @@
+rootProject.name='dimeno-collector'
+include ':app'
+include ':collector'
