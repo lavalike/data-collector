@@ -1,7 +1,7 @@
-package com.dimeno.collector.core;
+package com.wangzhen.collector.core;
 
-import com.dimeno.collector.callback.Packer;
-import com.dimeno.collector.common.Common;
+import com.wangzhen.collector.callback.Packer;
+import com.wangzhen.collector.common.Common;
 
 import java.io.File;
 import java.io.FileInputStream;

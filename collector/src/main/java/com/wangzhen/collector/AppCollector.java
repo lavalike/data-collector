@@ -1,12 +1,12 @@
-package com.dimeno.collector;
+package com.wangzhen.collector;
 
 import androidx.annotation.Nullable;
 
-import com.dimeno.collector.callback.Callback;
-import com.dimeno.collector.callback.Collector;
-import com.dimeno.collector.callback.Request;
-import com.dimeno.collector.manager.TaskManager;
-import com.dimeno.collector.task.TaskParams;
+import com.wangzhen.collector.callback.Callback;
+import com.wangzhen.collector.callback.Collector;
+import com.wangzhen.collector.callback.Request;
+import com.wangzhen.collector.manager.TaskManager;
+import com.wangzhen.collector.task.TaskParams;
 
 /**
  * AppCollector

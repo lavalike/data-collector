@@ -1,6 +1,6 @@
-package com.dimeno.collector.callback;
+package com.wangzhen.collector.callback;
 
-import com.dimeno.collector.task.TaskParams;
+import com.wangzhen.collector.task.TaskParams;
 
 /**
  * Request

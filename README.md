@@ -1,8 +1,8 @@
-# dimeno-collector
+# data-collector
 > 资源收集压缩工具
 
 [![Platform](https://img.shields.io/badge/Platform-Android-00CC00.svg?style=flat)](https://www.android.com)
-[![](https://jitpack.io/v/dimeno-tech/dimeno-collector.svg)](https://jitpack.io/#dimeno-tech/dimeno-collector)
+[![](https://jitpack.io/v/lavalike/data-collector.svg)](https://jitpack.io/#lavalike/data-collector)
 
 ### 依赖导入
 
@@ -21,7 +21,7 @@ allprojects {
 
 ``` gradle
 dependencies {
-	implementation 'com.github.dimeno-tech:dimeno-collector:0.0.1'
+	implementation 'com.github.lavalike:data-collector:0.0.1'
 }
 ```
 

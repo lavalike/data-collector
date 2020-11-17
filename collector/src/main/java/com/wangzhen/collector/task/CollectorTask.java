@@ -1,10 +1,10 @@
-package com.dimeno.collector.task;
+package com.wangzhen.collector.task;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
 
-import com.dimeno.collector.core.DataPacker;
+import com.wangzhen.collector.core.DataPacker;
 
 /**
  * CollectorTask

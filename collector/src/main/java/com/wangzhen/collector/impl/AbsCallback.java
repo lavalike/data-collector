@@ -1,6 +1,6 @@
-package com.dimeno.collector.impl;
+package com.wangzhen.collector.impl;
 
-import com.dimeno.collector.callback.Callback;
+import com.wangzhen.collector.callback.Callback;
 
 /**
  * default implementation of {@link Callback}

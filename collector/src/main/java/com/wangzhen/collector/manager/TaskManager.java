@@ -1,9 +1,9 @@
-package com.dimeno.collector.manager;
+package com.wangzhen.collector.manager;
 
-import com.dimeno.collector.callback.Request;
-import com.dimeno.collector.core.DataPacker;
-import com.dimeno.collector.task.CollectorTask;
-import com.dimeno.collector.task.TaskParams;
+import com.wangzhen.collector.callback.Request;
+import com.wangzhen.collector.core.DataPacker;
+import com.wangzhen.collector.task.CollectorTask;
+import com.wangzhen.collector.task.TaskParams;
 
 import java.lang.ref.SoftReference;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.dimeno.collector.sample;
+package com.wangzhen.collector.sample;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -11,9 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.dimeno.collector.AppCollector;
-import com.dimeno.collector.common.Common;
-import com.dimeno.collector.impl.AbsCallback;
+import com.wangzhen.collector.AppCollector;
+import com.wangzhen.collector.common.Common;
+import com.wangzhen.collector.impl.AbsCallback;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

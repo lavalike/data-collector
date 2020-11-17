@@ -1,4 +1,4 @@
-package com.dimeno.collector.callback;
+package com.wangzhen.collector.callback;
 
 /**
  * packer

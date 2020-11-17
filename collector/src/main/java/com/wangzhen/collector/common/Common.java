@@ -1,4 +1,4 @@
-package com.dimeno.collector.common;
+package com.wangzhen.collector.common;
 
 import android.os.Environment;
 
